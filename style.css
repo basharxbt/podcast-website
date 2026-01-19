@@ -305,3 +305,63 @@ body{
     font-size: 24px;
     font-weight: bold;
 }
+
+.episodes{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.episodes-content{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.episodes-item{
+    width: 380px;
+    height: 440px;
+    background-color: #250D44;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.episode-header{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+}
+
+
+.episode-description{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.episode-info{
+    font-size: 16px;
+    font-weight: 100;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+.episode-runtime{
+    color: #00FF88;
+    display: flex;
+
+    align-items: center;
+    gap: 6px;
+}
+
+.episodes-name{
+    display: flex;
+    justify-self: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
