@@ -642,6 +642,9 @@ br{
 }
 .features-name{
     font-size: 2rem;
+    display: flex;
+    justify-self: center;
+    text-align: center;
 }
 .episodes-content{
     flex-direction: column;
@@ -661,7 +664,11 @@ iframe{
 
 .episodes-name{
     font-size: 32px;
-    margin-top: 0px;
+    margin-top: 40px;
+
+    display: flex;
+    justify-self: center;
+    text-align: center;
 }
    .host{
     max-width: 400px;
