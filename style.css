@@ -3,56 +3,59 @@
     box-sizing: border-box;
 }
 
+
 body{
     background-color: #1A0B2E;
   font-family: "Inter", sans-serif;
   font-style: normal;
-  
 }
+
+button { transition: transform 0.3s ease, box-shadow 0.3s ease;  }
 
 button:hover{
     cursor: pointer;
-    
     transform: translateY(-5px);
-      transition: transform 0.3s ease, box-shadow 0.3s ease; 
-
 }
+
+
+/* Header Section */
+
 
 .navbar{
     display: flex;
     justify-content: space-around;
-    /* width: 100%; */
     height: 5.75rem;
     padding: 30px;
-    background-color: #1305299f;
-}
+    background-color: #1305299f; }
 
 .menu{
     width: 24px;
     height: 24px;
-    display: none;
+    display: none; 
 }
-hr{
-    border: 1px solid rgba(255, 255, 255, 0.13);
+
+hr{ border: 1px solid rgba(255, 255, 255, 0.13); 
 }
+
 .nav-links{
     list-style: none;
     display: flex;
     gap: 10px;
-}
+ }
 
 .nav-links a{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 500; 
 }
 
 .nav-head{
     color: #FFFFFF;
 
-    font-size: 35px;
+    font-size: 35px; 
 }
+
 .new{
     background-color: #00FF88;
     position: absolute;
@@ -62,12 +65,9 @@ hr{
     font-size: 26px;
     font-weight: 600;
     border-radius: 30px;
-    /* width: 70px;
-    height: 35px; */
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 8px 16px;
 }
 
@@ -78,8 +78,7 @@ hr{
         #FB09B4,
         #9100F8) ;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent
-;
+        -webkit-text-fill-color: transparent;
 }
 
 .subscribe-btn{
@@ -114,8 +113,6 @@ hr{
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    
-    /* padding: 100px; */
 
 }
 
@@ -127,18 +124,18 @@ hr{
     width: 100%;
     max-width: 450px;
     height: 450px;
-    /* width: 450px; */
 }
+
 .banner-item{
     overflow: hidden;
 }
+
 
 .circle-img{
     width: 100%;
     height: 100%;
     object-fit: contain;
     position: absolute;
-    /* top: -25%; */
     
 }
 
@@ -147,10 +144,10 @@ hr{
     justify-self: center;
     width: 200px;
     height: auto;
-    /* top: 25%; */
     animation:
      floatmic 6s ease-in-out infinite;
 }
+
 
 @keyframes floatmic{
     0%{
@@ -166,7 +163,6 @@ hr{
     }
 
 
-
 }
 
 .banner-info{
@@ -174,7 +170,6 @@ hr{
     text-align: center;
     margin-top: 0;
     position: relative;
-    /* top: -300px; */
    display: flex;
    flex-direction: column;
    gap: 10px;
@@ -205,7 +200,6 @@ hr{
         #f7e83f,
         #FB09B4,
         #9100F8) ;
-
         font-size: 16px;
         font-weight: 500;
         color: white;
@@ -233,6 +227,10 @@ hr{
     font-size: 16px;
     font-weight: 500;
 }
+
+
+
+/* MAIN SECTION */
 
 
 
@@ -287,20 +285,15 @@ hr{
 .features{
     background-color: #1d0638;
     padding: 120px 0;
-   
-
 }
 
 
 .features-name{
-
     justify-self: center;
     color: white;
     font-size: 3rem;
     font-weight: bold;
 }
-
-
 
 .features-content{
     display: grid;
@@ -391,11 +384,6 @@ hr{
     border-radius: 20px;
     overflow: hidden;
 }
-
-/* iframe{
-    max-width: 400px;
-    height: auto;
-} */
 
 .episode-header{
     font-size: 24px;
@@ -490,12 +478,11 @@ hr{
 
 }
 
-/* footer{
-    background-image: url(./assets/footer-bg.png);
-    height: 412px;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+
+
+/* Footer Section  */
+
+
 
 footer{
     background-image: url(./assets/footer-bg.png);
@@ -532,8 +519,10 @@ background: linear-gradient(
         #FB09B4,
         #9100F8) ;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent
-;}
+        -webkit-text-fill-color: transparent;
+    }
+
+
 .f-list a{
     display: flex;
     gap: 8px;
@@ -550,7 +539,15 @@ background: linear-gradient(
     display: none;
 }
 
+
+
+
 /* Responsive Start Here */
+
+
+/* Responsive For Small Device */
+
+
 
 @media screen and (max-width:576px) {
     .nav-links{display: none;}
@@ -601,7 +598,6 @@ background: linear-gradient(
     padding: 8px 16px;
 }
 .banner-info{
-    /* position: sticky; */
     max-width: 400px;
 }
     .about-info{
@@ -699,8 +695,6 @@ footer{
     background-repeat: no-repeat;
     padding: 40px 16px;
     display: flex;
-     /* min-height: 250px; */
-    /* background-color: #280e49 ; */
     max-height: 250px;
 }
 .footer-content{
@@ -730,7 +724,6 @@ footer{
     font-weight: 100;
   
    width: 100%;
-     justify-: center;
     margin: 0 auto;
    text-align: center;
 } 
@@ -743,6 +736,8 @@ footer{
 
 
 /* Medium Device Responsive */
+
+
 
 
 
@@ -920,14 +915,13 @@ footer{
     font-weight: 100;
   
    width: 100%;
-     justify-: center;
+     justify-content: center;
     margin: 0 auto;
    text-align: center;
 } 
  body{
         overflow-x: hidden;
     }
-
 
 
 }
