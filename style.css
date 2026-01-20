@@ -10,6 +10,13 @@ body{
   
 }
 
+button:hover{
+    cursor: pointer;
+    
+    transform: translateY(-5px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+}
 
 .navbar{
     display: flex;
@@ -142,7 +149,7 @@ hr{
     height: auto;
     /* top: 25%; */
     animation:
-     floatmic 4s ease-in-out infinite;
+     floatmic 6s ease-in-out infinite;
 }
 
 @keyframes floatmic{
