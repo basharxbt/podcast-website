@@ -135,6 +135,25 @@ hr{
     width: 200px;
     height: auto;
     /* top: 25%; */
+    animation:
+     floatmic 4s ease-in-out infinite;
+}
+
+@keyframes floatmic{
+    0%{
+        transform: translateY(0) rotate(0deg);
+    }
+    50%{
+        transform: translateY(-18px)rotate(180deg);
+    }
+
+    100%{
+
+        transform: translateY(0) rotate(0deg);
+    }
+
+
+
 }
 
 .banner-info{
@@ -490,7 +509,6 @@ footer{
     display: flex;
     gap: 40px;
 
-    font-size: 16px;
 }
 
 .footer-head{
@@ -517,7 +535,7 @@ background: linear-gradient(
     font-size: 20px;
 }
 
-.copyright{
+.footer-content .copyright {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 100;
@@ -600,13 +618,9 @@ background: linear-gradient(
     
 }
 
-
 br{
     display: none;
 }
-
-
-
 
 .about-item{
     max-width: 350px;
@@ -655,10 +669,6 @@ br{
     
 }
 
-
-
-
-   
 .episodes-content{
     flex-direction: column;
     gap: 20px;
@@ -681,9 +691,6 @@ iframe{
     
     margin-top: 0px;
 }
-
-
-
 
    .host{
     max-width: 400px;
@@ -715,53 +722,56 @@ iframe{
 }
 
 footer{
-    background-image: url(./assets/footer-bg.png);
-    background-size: contain;
+    
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    padding: 50px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: #280e49 ;
+    max-height: 250px;
 
 }
 
 .footer-content{
 
-    margin: 0 auto;
+    margin: 40 20px;
     max-width: 400px;
+    gap: 15px;
     /* padding: 40px 20px; */
     
-    height: 168px;
+    max-height: 168px;
 }
 
 .footer-social{
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+      gap: 20px;
+      max-width: 355px;
+     
 }
 
-
-
-
-/* .footer-social{
-    list-style: none;
-    display: flex;
-    gap: 40px;
-
-    font-size: 16px;
-} */
-
 .footer-head{
-    font-size: 2rem;
+    font-size: 3.1rem;
     font-weight: bold;
     color: white;
 } 
 
-
-
 .f-list a{
     
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400px;
 }
 
-.copyright{
-    color: #FFFFFF;
-    font-size: 18px;
+.footer-content .copyright {
+   
+    font-size: 16px;
     font-weight: 100;
+    width: 400px;
+    justify-self: center;
+    margin: 0 auto;
 }
+
 
 }
